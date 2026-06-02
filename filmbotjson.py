@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 
 load_dotenv()
 TOKEN = os.getenv('BOT_TOKEN')
-bot = Bot(token=TOKEN)
-#bot = telebot.TeleBot(TOKEN)
+#bot = Bot(token=TOKEN)
+bot = telebot.TeleBot(TOKEN)
 
 CHANNEL_ID = -1003702701562
 
