@@ -2,6 +2,7 @@ import telebot
 from telebot import types
 import json
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
 #TOKEN = os.getenv('TOKEN')
