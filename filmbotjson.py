@@ -4,10 +4,10 @@ import json
 from dotenv import load_dotenv
 
 load_dotenv()
-TOKEN = os.getenv('TOKEN')
+#TOKEN = os.getenv('TOKEN')
 #bot = Bot(token=TOKEN)
-bot = telebot.TeleBot(TOKEN)
-
+#bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(os.getenv('TOKEN'))
 CHANNEL_ID = -1003702701562
 
 user_codes = {}
