@@ -1,10 +1,12 @@
 import telebot
 from telebot import types
 import json
+from dotenv import load_dotenv
 
-TOKEN = ""
-
-bot = telebot.TeleBot(TOKEN)
+load_dotenv()
+TOKEN = os.getenv('BOT_TOKEN')
+bot = Bot(token=TOKEN)
+#bot = telebot.TeleBot(TOKEN)
 
 CHANNEL_ID = -1003702701562
 
