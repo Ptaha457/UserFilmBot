@@ -7,7 +7,7 @@ from telebot.apihelper import ApiTelegramException
 # НАСТРОЙКИ
 # ==========================
 
-TOKEN = "8986853338:AAEPb2lEVXW7Bstb0Gg1udr3M8njVMABxqI"
+TOKEN = ""
 
 ADMINS = [1024857184, 1702740121] 
 
