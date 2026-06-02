@@ -3,16 +3,24 @@ from telebot import types
 import json
 from telebot.apihelper import ApiTelegramException
 
+from dotenv import load_dotenv
+import os
+
+load_dotenv()
+#TOKEN = os.getenv('TOKEN')
+#bot = Bot(token=TOKEN)
+#bot = telebot.TeleBot(TOKEN)
+
 # ==========================
 # НАСТРОЙКИ
 # ==========================
 
-TOKEN = ""
+#TOKEN = ""
 
 ADMINS = [1024857184, 1702740121] 
 
-bot = telebot.TeleBot(TOKEN)
-
+#bot = telebot.TeleBot(TOKEN)
+bot = telebot.TeleBot(os.getenv('TOKEN'))
 user_data = {}
 
 MENU_BUTTONS = [
